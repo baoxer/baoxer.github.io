@@ -1,25 +1,239 @@
-extends partial/layout
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>第二篇测试文章 | Baoxer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="这是第二篇测试文章，无实质内容。。。 这是第二篇测试文章，无实质内容。。。 这是第二篇测试文章，无实质内容。。。 这是第二篇测试文章，无实质内容。。。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第二篇测试文章">
+<meta property="og:url" content="http://example.com/2024/08/29/test2/index.html">
+<meta property="og:site_name" content="Baoxer">
+<meta property="og:description" content="这是第二篇测试文章，无实质内容。。。 这是第二篇测试文章，无实质内容。。。 这是第二篇测试文章，无实质内容。。。 这是第二篇测试文章，无实质内容。。。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-08-29T06:21:46.000Z">
+<meta property="article:modified_time" content="2024-08-29T06:23:04.596Z">
+<meta property="article:author" content="Baoxer">
+<meta property="article:tag" content="测试">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Baoxer" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-include mixins
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-block site_title
-    != page.title + " · " + config.title
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Baoxer</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
 
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    .pagination
-      ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-        if next
-          li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
+      <div class="outer">
+        <section id="main"><article id="post-test2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/08/29/test2/" class="article-date">
+  <time class="dt-published" datetime="2024-08-29T06:21:46.000Z" itemprop="datePublished">2024-08-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      第二篇测试文章
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>这是第二篇测试文章，无实质内容。。。</p>
+<p>这是第二篇测试文章，无实质内容。。。</p>
+<p>这是第二篇测试文章，无实质内容。。。</p>
+<p>这是第二篇测试文章，无实质内容。。。<span id="more"></span></p>
+<p>这是第二篇测试文章，无实质内容。。。</p>
+<p>这是第二篇测试文章，无实质内容。。。</p>
+<p>这是第二篇测试文章，无实质内容。。。</p>
+<p>这是第二篇测试文章，无实质内容。。。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/08/29/test2/" data-id="cm0ext28e0003g0vm1k2q22qf" data-title="第二篇测试文章" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/08/29/test-test/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">test-test</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">测试</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">八月 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/29/test2/">第二篇测试文章</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/29/test-test/">test-test</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/29/firstarticle/">firstarticle</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/29/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 Baoxer<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
